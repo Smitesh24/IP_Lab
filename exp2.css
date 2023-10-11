@@ -1,0 +1,134 @@
+/* exp2.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main content section styles */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.about-me, .other-info section {
+  background-color: white;
+  padding: 15px; /* Adjusted padding */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+.about-me {
+  max-width: 600px;
+  flex: 1; /* Allow to grow and take remaining space */
+  margin-left: 200px;
+  margin-bottom: 300px;
+}
+
+.about-me h2 {
+  margin-bottom: 10px;
+}
+
+.other-info {
+  padding-left: 15px; /* Adjusted padding */
+  max-width: 350px; /* Adjust as needed */
+  padding-right: 250px;
+}
+
+.contact h2, .skills h2, .frameworks-libraries h2, .education h2 {
+  margin-top: 0; /* Remove margin from the top of each section's heading */
+}
+
+.contact ul, .skills ul, .frameworks-libraries ul, .education ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.contact li::before, .skills li::before, .frameworks-libraries li::before, .education li::before {
+  content: '\2022'; /* Bullet point */
+  color: #007BFF;
+  margin-right: 10px;
+}
+
+/* Footer styles */
+/* footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+} */
+
+/* Pseudo-class for hover effect on contact list items */
+.contact li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Pseudo-class for hover effect on skills, frameworks-libraries, and education list items */
+.skills li:hover,
+.frameworks-libraries li:hover,
+.education li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Pseudo-element for section headings */
+.contact h2::before,
+.skills h2::before,
+.frameworks-libraries h2::before,
+.education h2::before {
+  content: '\2192'; /* Right arrow */
+  margin-right: 10px;
+}
+
+/* Pseudo-element for footer text */
+/* footer::before {
+  content: '© ';
+} */
+
+/* CSS for the profile picture */
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden; /* Ensure the image is clipped within the border radius */
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+}
+
+.profile-picture img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* Grow and take remaining vertical space */
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  flex-shrink: 0; /* Don't allow footer to shrink */
+}
